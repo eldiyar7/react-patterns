@@ -8,7 +8,6 @@ function ExerciseContainer({match}) {
 }
 
 function Home() {
-  console.log(this)
   return (
     <nav>
       <ul>
@@ -17,6 +16,9 @@ function Home() {
         </li>
         <li>
           <Link to="/patterns/02">Pattern #2</Link>
+        </li>
+        <li>
+          <Link to="/patterns/03">Pattern #3</Link>
         </li>
       </ul>
     </nav>
