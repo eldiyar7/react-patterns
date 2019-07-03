@@ -12,13 +12,24 @@ function Home() {
     <nav>
       <ul>
         <li>
-          <Link to="/patterns/01">Pattern #1</Link>
+          <Link to="/patterns/01">
+            Pattern #1 (setState callback)
+          </Link>
         </li>
         <li>
-          <Link to="/patterns/02">Pattern #2</Link>
+          <Link to="/patterns/02">
+            Pattern #2 (Compound Components)
+          </Link>
         </li>
         <li>
-          <Link to="/patterns/03">Pattern #3</Link>
+          <Link to="/patterns/03">
+            Pattern #3 (Context Components)
+          </Link>
+        </li>
+        <li>
+          <Link to="/patterns/04">
+            Pattern #4 (Render Prop Components)
+          </Link>
         </li>
       </ul>
     </nav>
