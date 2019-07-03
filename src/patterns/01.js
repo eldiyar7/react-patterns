@@ -17,12 +17,6 @@ class Toggle extends Component {
     )
   }
 
-  incrementCount = () => {
-    this.setState({
-      count: this.state.count + 1,
-    })
-  }
-
   render() {
     return (
       <div>
