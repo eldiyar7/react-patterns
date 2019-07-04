@@ -31,6 +31,11 @@ function Home() {
             Pattern #4 (Render Prop Components)
           </Link>
         </li>
+        <li>
+          <Link to="/patterns/05">
+            Pattern #5 (Component Injection)
+          </Link>
+        </li>
       </ul>
     </nav>
   )
