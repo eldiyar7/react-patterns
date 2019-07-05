@@ -17,10 +17,8 @@ class Toggle extends Component {
     )
   }
 
-  // we could use `this.props.children({on: this.state.on, toggle: this.toggle})`
-  // what is the difference between above and below ?
   render() {
-    return this.props.children({
+    return this.props.render({
       on: this.state.on,
       toggle: this.toggle,
     })
@@ -40,14 +38,14 @@ function ToggleChild({on, toggle}) {
   )
 }
 
-// component injection, we can declare it outside as well
 function Usage({
   onToggle = (...args) => console.log('onToggle', ...args),
 }) {
   return (
-    <Toggle onToggle={onToggle}>
-      {props => <ToggleChild {...props} />}
-    </Toggle>
+    <Toggle
+      onToggle={onToggle}
+      render={props => <ToggleChild {...props} />}
+    />
   )
 }
 
