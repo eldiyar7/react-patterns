@@ -34,13 +34,18 @@ function Home() {
         <li>
           <Link to="/patterns/05">
             Pattern #5 (Component Injection: Passing render function
-            as children)
+            as children) as children)
           </Link>
         </li>
         <li>
-          <Link to="/patterns/05">
+          <Link to="/patterns/06">
             Pattern #6 (Component Injection: Passing render function
-            as prop)
+            as prop) as prop)
+          </Link>
+        </li>
+        <li>
+          <Link to="/patterns/07">
+            Pattern #7 (Prop Collection Pattern)
           </Link>
         </li>
       </ul>
