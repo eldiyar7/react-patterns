@@ -48,6 +48,11 @@ function Home() {
             Pattern #7 (Prop Collection Pattern)
           </Link>
         </li>
+        <li>
+          <Link to="/patterns/08">
+            Pattern #8 (Prop Collection Pattern: Prop Getters)
+          </Link>
+        </li>
       </ul>
     </nav>
   )
