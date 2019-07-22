@@ -53,6 +53,11 @@ function Home() {
             Pattern #8 (Prop Collection Pattern: Prop Getters)
           </Link>
         </li>
+        <li>
+          <Link to="/patterns/09">
+            Pattern #9 (Context Components: using `useContext` hook)
+          </Link>
+        </li>
       </ul>
     </nav>
   )
