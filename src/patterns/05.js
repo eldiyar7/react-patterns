@@ -40,15 +40,25 @@ function ToggleChild({on, toggle}) {
   )
 }
 
+// implement HOC
+function withToggle(Component, callback) {
+  return class extends React.Component {
+    render() {
+      return (
+        <Toggle onToggle={callback}>
+          {props => <Component {...props} />}
+        </Toggle>
+      )
+    }
+  }
+}
+
 // component injection, we can declare it outside as well
 function Usage({
   onToggle = (...args) => console.log('onToggle', ...args),
 }) {
-  return (
-    <Toggle onToggle={onToggle}>
-      {props => <ToggleChild {...props} />}
-    </Toggle>
-  )
+  const ToggleComponent = withToggle(ToggleChild, onToggle)
+  return <ToggleComponent />
 }
 
 export {Usage as default}
